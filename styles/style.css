@@ -50,11 +50,12 @@ body
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion__contenido
 {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -96,7 +97,7 @@ body
 .presentacion__enlaces__link
 {
     background-color: var(--color-primario);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -116,6 +117,11 @@ body
     background-color: var(--color-hover);
 }
 
+.presentacion__imagen
+{
+    width: 50%;
+}
+
 .footer
 {
     background-color: var(--color-terciario);
@@ -131,4 +137,22 @@ body
 {
     text-decoration: none;
     color: var(--color-terciario);
+}
+
+@media (max-width: 1200px)
+{
+    .presentacion
+    {
+        flex-direction: column-reverse;
+    }
+
+    .header
+    {
+        padding: 10%;
+    }
+
+    .header__menu
+    {
+        justify-content: center;
+    }
 }
